@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Drama Club Membership Form</title>
+    <link href="public/styles/form-style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Drama Club Membership Form</h1>
+    <p class="description"> Our Drama Club offers everyone a chance to express their creativity.</p>
+    <p class="description">(Please enter your correct information.)</p>
+
+    <main>
+        <form id="registration-form" action="/" method="post">
+            <fieldset id="personal-info">
+                <label for="full-name">Full Name <span class="required-text">*</span></label>
+                <input id="full-name" name="full-name" type="text" required>
+    
+                <label for="age">Age <span class="required-text">*</span></label>
+                <input id="age" name="age" type="number" min="15" max="99" required>
+    
+                <label for="email">E-mail <span class="required-text">*</span></label>
+                <input id="email" name="e-mail" type="email" required>
+    
+                <label for="phone-number">Contact number <span class="required-text">*</span></label>
+                <input id="phone-number" name="phone-number" type="text" pattern="[0-9]{10}" required>
+    
+                <label for="occupation">What is your occupation?</label>
+                <select id="occupation" name="occupation">
+                    <option value="">(Select one)</option>
+                    <option value="student">Student</option>
+                    <option value="working">Working</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="prefernottosay">Prefer not to say</option>
+                </select>
+            </fieldset>
+    
+            <fieldset id="inquiry">
+    
+                
+                <div class="radio-btn">
+                    <label >Have you ever been a part of similar activities before? <span class="required-text">*</span></label>
+                    <label for="is-partOfSimilarActivities"> <input id="is-partOfSimilarActivities" name="partOfSimilarActivities" value="yes" type="radio"> Yes</label>
+                
+                    <label for="not-partOfSimilarActivities"> <input id="not-partOfSimilarActivities" name="partOfSimilarActivities" value="no" type="radio">No</label>
+        
+                </div>
+    
+                <label for="accomplishWhat">What do you hope to accomplish in Drama Club? <span class="required-text">*</span></label>
+                <textarea id="accomplishWhat" name="accomplishWhat" rows="9"></textarea>
+                
+    
+                <label for="first-termsandconditions"><input id="first-termsandconditions" name="first-termsandconditions" type="checkbox" required><span class="required-text">*</span> I hereby agree to abide by the present and future rules of the Drama Club.</label>
+                <label for="second-termsandconditions"><input id="second-termsandconditions" name="second-termsandconditions" type="checkbox" required><span class="required-text">*</span> I am able and willing to volunteer to help with activities and performances.</label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </main>
+    
+    
+</body>
+</html>

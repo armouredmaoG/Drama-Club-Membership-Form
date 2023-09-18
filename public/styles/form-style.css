@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+	background: linear-gradient(90deg, #540D1BE0, #9A2B06);
+	width: 100%;
+	margin: 0;
+	color: white;
+    font-family: Didot, serif;
+}
+
+h1 {
+    font-size: 3rem;
+	text-align: center;
+	margin: 1em auto;
+	color: yellow;
+}
+
+.description{
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+    margin: 2rem auto;
+}
+
+.required-text{
+    color:red;
+}
+
+
+/*Form*/
+form{
+    font-size: 1.5rem;
+    width: 60%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/*Remove border of fieldset*/
+fieldset{
+    border:0;
+    padding:1em;
+}
+
+/*Setting height of input and select elements*/
+#personal-info input, select{
+    height: 2rem;
+}
+
+/*Setting font-size and font-family of text inputs of input, select and textarea elements*/
+input, textarea, select{
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+/*Width and margin of label, input, select and textarea*/
+label, input, select, textarea{
+    width: 100%;
+    margin: 1em 0;
+}
+
+
+/*Set the space between radio button and label in the second fieldset with id="inquiry"*/
+#inquiry input{
+    width: unset;
+    margin-right: 0.5em;
+}
+
+/*Making the radio button and the label in the same line*/
+.radio-btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+/*Make the label 100% of the width of fieldset*/
+#inquiry label{
+    display: block;
+}
+
+/*Styling button*/
+input[type=submit]{
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #540D1BE0, #9A2B06);
+    border: 1px solid black;
+    color: white;
+}
+
+
+
+/*Adding Responsiveness for different devices*/
+
+/*Mobile Devices*/
+@media only screen and (max-width:480px){
+    h1{
+        font-size: 2rem;
+        margin: 1em auto;
+    }
+
+    form{
+        font-size: 1rem;
+    }
+
+    input, textarea, select{
+        font-size: 1rem;
+    }
+}
+
